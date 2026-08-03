@@ -1,5 +1,20 @@
+// Feature flags — toggle optional sections here.
+const SITE_FEATURES = {
+    // "Who are we" triangle diagram (Palestinian / Israeli / European boxes) in the About section.
+    whoDiagram: false,
+    // Three-stage roadmap diagram (cards + arrows) in the Blueprint/Vision section.
+    roadmapDiagram: false,
+};
+
 const CURRENT_LANG = document.documentElement.lang === 'ar' ? 'he' : 'en';
 let resourcesData = null;
+
+if (SITE_FEATURES.whoDiagram) {
+    document.querySelectorAll('.who-diagram').forEach(el => el.classList.add('is-enabled'));
+}
+if (SITE_FEATURES.roadmapDiagram) {
+    document.querySelectorAll('.blueprint .grid').forEach(el => el.classList.add('is-enabled'));
+}
 
 function formatResourceDate(dateStr, lang) {
     if (!dateStr) return '';

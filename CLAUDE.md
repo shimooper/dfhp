@@ -4,9 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the website for **DFH** (Democracy and Federalism Hub), a Palestinian political movement/civic engagement platform, parallel to a sister Israeli movement. It is deployed via GitHub Pages at `dfh.org.ps`.
+This is the website for **DFHP** (Democracy and Federalism Hub), a Palestinian political movement/civic engagement platform, parallel to a sister Israeli movement. It is deployed via GitHub Pages at `dfh.org.ps`.
 
-English is the canonical/default-language version of the site. The Arabic page (`/ar/`) is a **placeholder**: it was forked from an earlier Hebrew-language version of this template and its body copy is still literally in Hebrew (including the old "עתיד פדרלי" / "Federal Future" branding in the visible text) pending a real Arabic translation pass — don't assume the `/ar/` page's visible content reflects the current DFH branding or is actually Arabic yet. Only its structural/meta fields (`lang`, canonical URL, hreflang, language-switcher label, and the Latin-script portions of `<title>`/OG/JSON-LD) have been updated to DFH and to Arabic.
+English is the canonical/default-language version of the site. The Arabic page (`/ar/`) is a **placeholder**: it was forked from an earlier Hebrew-language version of this template and its body copy is still literally in Hebrew (including the old "עתיד פדרלי" / "Federal Future" branding in the visible text) pending a real Arabic translation pass — don't assume the `/ar/` page's visible content reflects the current DFHP branding or is actually Arabic yet. Only its structural/meta fields (`lang`, canonical URL, hreflang, language-switcher label, and the Latin-script portions of `<title>`/OG/JSON-LD) have been updated to DFHP and to Arabic.
 
 ## Architecture
 
@@ -35,7 +35,7 @@ Pushing to `main` deploys automatically via GitHub Pages — no CI step required
 
 ## Design System
 
-CSS variables defined at the top of `style.css`, sampled from the DFH logo (`images/used/big_logo.png`) — warm gold, forest green, terracotta, and deep maroon in place of the earlier bright yellow/blue/orange/red:
+CSS variables defined at the top of `style.css`, sampled from the DFHP logo (`images/used/big_logo.png`) — warm gold, forest green, terracotta, and deep maroon in place of the earlier bright yellow/blue/orange/red:
 - `--m-yellow`: #D9A441 (warm gold)
 - `--m-blue`: #22741F (forest green — role name kept for backward compatibility with existing CSS, no longer blue)
 - `--m-orange`: #B8541F (terracotta)
@@ -51,7 +51,7 @@ Fonts: **Heebo** (body) and **Rubik** (headings) from Google Fonts. Mobile break
 1. Header/nav — sticky with scroll-shrink effect; nav links (English: About, Vision, Events, More Info, Join); language switcher (`EN | AR`) always on physical left
 2. Hero — yellow background
 3. About (`#about`) — "who we are" diagram (two youth movements + joint HQ) + three message-cards with background images
-4. Blueprint (`#plan`) — three-stage roadmap (cards + SVG arrows) + 10 aspect-cards; stage 2 links to `docs/charter/Federal Charter Eng_Heb.pdf`
+4. Blueprint (`#plan`) — three-stage roadmap (cards + SVG arrows) + 10 aspect-cards; stage 2 links to `docs/charter/Federal Charter.pdf`
 5. Events (`#events`) — 4 image-cards grid + resources banner (`#resources`) with 3 resource-cards (PDF, external article, journal article)
 6. CTA (`#join`) — embedded Google Form iframe (no custom form fields)
 7. Footer — logo, Instagram social link, tagline

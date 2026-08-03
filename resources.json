@@ -2,7 +2,7 @@
   "resources": [
     {
       "id": 1,
-      "link": "/docs/charter/Federal Charter Eng_Heb.pdf",
+      "link": "/docs/charter/Federal Charter.pdf",
       "date": "2026-02-22",
       "logo": "/docs/docs_logos/shaking_hands.webp",
       "cardBackground": "#EEF6EA",
@@ -13,71 +13,7 @@
       },
       "en": {
         "title": "The Federal Charter",
-        "description": "The joint movement charter, formulated in partnership with the Palestinian counterpart movement, was adopted on February 22, 2026, during a plenary meeting of all activists held in East Jerusalem, at the residence of the EU Ambassador."
-      }
-    },
-    {
-      "id": 2,
-      "link": "/docs/Supranational Federalism - No 3.pdf",
-      "date": "2026-03",
-      "logo": "/docs/docs_logos/Library-SUPRANATIONAL-FEDERALISM-1.webp",
-      "cardBackground": "#F0FDF4",
-      "cardBorderColor": "var(--m-blue)",
-      "he": {
-        "title": "Anatomy of a Conflict: Architecture of a Solution. An Israeli-Palestinian Partnership Towards Levantine Federalism",
-        "description": "יאיר גורני, ראש צוות המדיניות בתנועה, פרסם מאמר יחד עם הילי עמנואל בכתב העת SUPERNATIONAL FEDERALISM."
-      },
-      "en": {
-        "title": "Anatomy of a Conflict: Architecture of a Solution. An Israeli-Palestinian Partnership Towards Levantine Federalism",
-        "description": "Yair Gorni, Head of our Policy Team, published an article together with Hili Emanuel in the SUPERNATIONAL FEDERALISM journal."
-      }
-    },
-    {
-      "id": 3,
-      "link": "https://www.thenewfederalist.eu/as-israelis-and-palestinians-we-shall-go-together-to-brussels",
-      "date": "2026-03-04",
-      "logo": "/docs/docs_logos/logo-en_the_new_federalist.webp",
-      "cardBackground": "#FFF7ED",
-      "cardBorderColor": "var(--m-orange)",
-      "he": {
-        "title": "As Israelis and Palestinians, We Shall Go Together to Brussels",
-        "description": "יאיר גורני, ראש צוות המדיניות בתנועה, פרסם מאמר במגזין The New Federalist — בו הוא קורא לישראלים ולפלסטינים לפעול יחד בזירה האירופית."
-      },
-      "en": {
-        "title": "As Israelis and Palestinians, We Shall Go Together to Brussels",
-        "description": "Yair Gorni, Head of our Policy Team, published an article in The New Federalist magazine, where he calls for Israelis and Palestinians to act together in the European arena."
-      }
-    },
-    {
-      "id": 4,
-      "link": "/docs/SF  n. 4 - 2026.pdf",
-      "date": "2026-06",
-      "logo": "/docs/docs_logos/Library-SUPRANATIONAL-FEDERALISM-1.webp",
-      "cardBackground": "#F0FDF4",
-      "cardBorderColor": "var(--m-blue)",
-      "he": {
-        "title": "Federal Bridges – The Need for a United front for Peace in the Middle East",
-        "description": "יאיר גורני, ראש צוות המדיניות בתנועה, פרסם מאמר בכתב העת SUPERNATIONAL FEDERALISM."
-      },
-      "en": {
-        "title": "Federal Bridges – The Need for a United front for Peace in the Middle East",
-        "description": "Yair Gorni, Head of our Policy Team, published an article in the SUPERNATIONAL FEDERALISM journal."
-      }
-    },
-    {
-      "id": 5,
-      "link": "https://www.thenewfederalist.eu/the-key-to-peace-between-israel-and-palestine-is-education",
-      "date": "2026-06-05",
-      "logo": "/docs/docs_logos/logo-en_the_new_federalist.webp",
-      "cardBackground": "#FFF7ED",
-      "cardBorderColor": "var(--m-orange)",
-      "he": {
-        "title": "The key to peace between Israel and Palestine is education",
-        "description": "נדב לוינשטיין, מצוות המדיניות שלנו, פרסם מאמר בכתב העת The New Federalist בו הוא שם זרקור על חינוך וההקשר הרחב יותר של הסכסוך."
-      },
-      "en": {
-        "title": "The key to peace between Israel and Palestine is education",
-        "description": "Nadav Lowenstein, from our Policy Team, published an article in The New Federalist magazine, where he puts a spotlight on education and the broader context of the conflict."
+        "description": "The joint movement charter was adopted on February 22, 2026, during a plenary meeting of all activists held in East Jerusalem, at the residence of the EU Ambassador."
       }
     }
   ]
