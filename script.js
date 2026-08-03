@@ -7,6 +7,9 @@ const SITE_FEATURES = {
 };
 
 const CURRENT_LANG = document.documentElement.lang === 'ar' ? 'he' : 'en';
+// Resolved from this script's own <script src> so links work whether the site is hosted
+// at a domain root or under a GitHub Pages project path (e.g. /dfhp/).
+const SITE_ROOT = new URL('.', document.currentScript.src).href;
 let resourcesData = null;
 
 if (SITE_FEATURES.whoDiagram) {
@@ -38,13 +41,13 @@ function renderResources(lang) {
     grid.innerHTML = [...resourcesData.resources].reverse().map(r => {
         const t = r[lang] || r['he'];
         const logoHtml = r.logo
-            ? `<img src="${r.logo}" alt="" class="resource-logo" style="max-height: 28px; margin-bottom: 0.75rem;">`
+            ? `<img src="${new URL(r.logo, SITE_ROOT)}" alt="" class="resource-logo" style="max-height: 28px; margin-bottom: 0.75rem;">`
             : '';
         const dateStr = formatResourceDate(r.date, lang);
         const dateHtml = dateStr
             ? `<div class="resource-date">${dateStr}</div>`
             : '';
-        return `<a href="${r.link}" target="_blank" rel="noopener noreferrer" class="resource-card" style="background: ${r.cardBackground}; border-top: 6px solid ${r.cardBorderColor}; align-items: flex-start; text-align: right;">
+        return `<a href="${new URL(r.link, SITE_ROOT)}" target="_blank" rel="noopener noreferrer" class="resource-card" style="background: ${r.cardBackground}; border-top: 6px solid ${r.cardBorderColor}; align-items: flex-start; text-align: right;">
             ${logoHtml}
             <div class="resource-title">${t.title}</div>
             ${dateHtml}
@@ -54,7 +57,7 @@ function renderResources(lang) {
     }).join('');
 }
 
-fetch('/resources.json')
+fetch(new URL('resources.json', SITE_ROOT))
     .then(r => r.json())
     .then(data => {
         resourcesData = data;

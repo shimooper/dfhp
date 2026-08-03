@@ -2,9 +2,9 @@
   "resources": [
     {
       "id": 1,
-      "link": "/docs/charter/Federal Charter.pdf",
+      "link": "docs/charter/Federal Charter.pdf",
       "date": "2026-02-22",
-      "logo": "/docs/docs_logos/shaking_hands.webp",
+      "logo": "docs/docs_logos/shaking_hands.webp",
       "cardBackground": "#EEF6EA",
       "cardBorderColor": "var(--m-blue)",
       "he": {

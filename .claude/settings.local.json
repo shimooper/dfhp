@@ -32,7 +32,11 @@
       "Bash(taskkill //F //IM node.exe //FI \"WINDOWTITLE eq npx*\")",
       "Bash(pkill -f \"npx serve\")",
       "Bash(netstat -ano)",
-      "Bash(taskkill *)"
+      "Bash(taskkill *)",
+      "Bash(git config *)",
+      "Bash(git -C \"C:/repos/dfhp\" log --oneline -5)",
+      "Bash(git -C \"C:/repos/dfhp\" remote -v)",
+      "Bash(curl -s http://localhost:4173/ar/)"
     ]
   }
 }
