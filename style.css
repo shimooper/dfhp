@@ -1,11 +1,11 @@
 :root {
-    --m-yellow: #fbc654;
-    --m-blue: #1274ce;
-    --m-orange: #f78803;
-    --m-red: #da2c2d;
-    --m-bg: #FDFBF7;
-    --m-dark: #033653;
-    --m-white: #eee6c1;
+    --m-yellow: #D9A441;
+    --m-blue: #22741F;
+    --m-orange: #B8541F;
+    --m-red: #7C1500;
+    --m-bg: #FBF6EE;
+    --m-dark: #3A2A22;
+    --m-white: #F0E6D2;
     --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -55,7 +55,7 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(253, 251, 247, 0.9);
+    background: rgba(251, 246, 238, 0.9);
     backdrop-filter: blur(10px);
     border-bottom: 3px solid var(--m-dark);
     transition: var(--transition);
@@ -136,7 +136,7 @@ nav {
 }
 
 .btn-blue { background: var(--m-blue); color: #fff; }
-.btn-blue:hover { background: #1a44bc; transform: translateY(-3px); box-shadow: 7px 7px 0px var(--m-dark); }
+.btn-blue:hover { background: #164F14; transform: translateY(-3px); box-shadow: 7px 7px 0px var(--m-dark); }
 
 /* Hero Section */
 .hero {
@@ -187,7 +187,7 @@ nav {
 
 /* Manifesto */
 .manifesto {
-    background-color: #c0392b;
+    background-color: var(--m-red);
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -299,7 +299,7 @@ nav {
 }
 
 .message-card {
-    background: #1e3a8a;
+    background: #16400F;
     border-radius: 16px;
     padding: 2.5rem 2.5rem;
     text-align: right;
@@ -345,7 +345,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(30, 58, 138, 0.82);
+    background: rgba(22, 64, 15, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -376,7 +376,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(30, 58, 138, 0.82);
+    background: rgba(22, 64, 15, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -409,7 +409,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(30, 58, 138, 0.82);
+    background: rgba(22, 64, 15, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -473,7 +473,7 @@ nav {
 }
 
 .card {
-    background: rgba(255, 90, 0, 0.18);
+    background: rgba(184, 84, 31, 0.18);
     border: 3px solid var(--m-dark);
     border-radius: 24px;
     padding: 3.5rem 2.5rem;
@@ -616,7 +616,7 @@ nav {
     font-weight: 400;
     line-height: 1.6;
     text-align: right;
-    border-top: 1px solid rgba(3, 54, 83, 0.2);
+    border-top: 1px solid rgba(58, 42, 34, 0.2);
     padding-top: 0.75rem;
     margin: 0;
 }
@@ -732,8 +732,8 @@ nav {
 }
 
 .resource-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
 }
 
@@ -759,11 +759,24 @@ nav {
 
 .resource-btn {
     font-size: 0.9rem;
-    padding: 0.4rem 1.2rem;
-    background: var(--m-blue);
-    color: white;
-    border-radius: 20px;
+    font-weight: 600;
+    color: var(--m-blue);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.resource-title {
+    font-size: 1.05rem;
     font-weight: 700;
+    margin-bottom: 0.35rem;
+    color: var(--m-dark);
+    line-height: 1.4;
+}
+
+.resource-date {
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 0.75rem;
 }
 
 /* CTA Section */
@@ -822,36 +835,28 @@ nav {
 
 /* Footer */
 footer {
-    background: var(--m-dark);
+    background-color: var(--m-dark);
+    background-image: url('images/used/dfhp_banner.jpeg');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 60px 0;
     text-align: center;
     border-top: 4px solid var(--m-yellow);
+    position: relative;
+    overflow: hidden;
 }
 
-.footer-logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    margin-bottom: 1.5rem;
+footer::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(58, 42, 34, 0.75);
 }
 
-.footer-logo-img {
-    width: 45px;
-    height: 45px;
-    object-fit: contain;
-    border-radius: 50%;
-    border: 2px solid var(--m-white);
-    background: white;
-    padding: 3px;
-    order: -1;
-}
-
-.footer-logo {
-    font-size: 2rem;
-    margin-bottom: 0;
-    color: var(--m-yellow);
+footer .container {
+    position: relative;
+    z-index: 1;
 }
 
 .socials {
@@ -912,6 +917,7 @@ footer {
     cursor: pointer;
     color: var(--m-dark);
     opacity: 0.5;
+    text-decoration: none;
     transition: color 0.2s, opacity 0.2s;
     white-space: nowrap;
 }

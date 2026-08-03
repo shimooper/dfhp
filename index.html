@@ -1,10 +1,53 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SY1BCP94TZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SY1BCP94TZ');
+    </script>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/webp" href="images/used/logo.webp">
+    <link rel="icon" type="image/webp" href="images/used/big_logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>עתיד פדרלי - מכנה משותף</title>
+    <title>DFH | Democracy and Federalism Hub</title>
+    <meta name="description" content="DFH is a joint Palestinian-Israeli movement building a practical, optimistic path from a local alliance of interests to a Levantine federation.">
+    <meta name="google-site-verification" content="0JrqP5Sfdac5PynobBExRzrpou3nOqSH0eNDSoNE3GY" />
+    <link rel="canonical" href="https://dfh.org.ps/">
+    <link rel="alternate" hreflang="ar" href="https://dfh.org.ps/ar/">
+    <link rel="alternate" hreflang="en" href="https://dfh.org.ps/">
+    <link rel="alternate" hreflang="x-default" href="https://dfh.org.ps/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DFH">
+    <meta property="og:url" content="https://dfh.org.ps/">
+    <meta property="og:title" content="DFH | Democracy and Federalism Hub">
+    <meta property="og:description" content="DFH is a joint Palestinian-Israeli movement building a practical, optimistic path from a local alliance of interests to a Levantine federation.">
+    <meta property="og:image" content="https://dfh.org.ps/images/used/dfhp_banner.jpeg">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_PS">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="DFH | Democracy and Federalism Hub">
+    <meta name="twitter:description" content="DFH is a joint Palestinian-Israeli movement building a practical, optimistic path from a local alliance of interests to a Levantine federation.">
+    <meta name="twitter:image" content="https://dfh.org.ps/images/used/dfhp_banner.jpeg">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DFH",
+        "alternateName": "Democracy and Federalism Hub",
+        "url": "https://dfh.org.ps/",
+        "logo": "https://dfh.org.ps/images/used/big_logo.png",
+        "description": "DFH is a joint Palestinian-Israeli movement building a practical, optimistic path from a local alliance of interests to a Levantine federation.",
+        "sameAs": ["https://www.instagram.com/dfh.palestine/"]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&family=Rubik:wght@700;800;900&display=swap" rel="stylesheet">
@@ -12,85 +55,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-SY1BCP94TZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-SY1BCP94TZ');
-</script>
 <body>
 
     <header id="header">
         <nav class="container">
             <a href="#" class="logo">
-                <img src="images/used/logo.webp" data-i18n-alt="logo-alt" alt="עתיד פדרלי לוגו" class="logo-img" onerror="this.style.display='none'">
-                <span data-i18n="logo-text">עתיד פדרלי - מכנה משותף</span>
+                <img src="images/used/small_logo.png" alt="DFH Logo" width="320" height="320" class="logo-img" onerror="this.style.display='none'">
+                <span>DFH</span>
             </a>
             <div class="nav-links">
-                <a href="#about" data-i18n="nav-about">עלינו</a>
-                <a href="#plan" data-i18n="nav-plan">החזון</a>
-                <a href="#events" data-i18n="nav-events">אירועים</a>
-                <a href="#resources" data-i18n="nav-resources">מידע נוסף</a>
+                <a href="#about">About</a>
+                <a href="#plan">Vision</a>
+                <a href="#events">Events</a>
+                <a href="#resources">More Info</a>
             </div>
-            <a href="#join" class="btn btn-blue" data-i18n="nav-join" style="font-size: 1rem; padding: 0.5rem 1.5rem; box-shadow: 3px 3px 0px var(--m-dark); background-color: var(--m-red); border-color: var(--m-red);">הצטרפות</a>
+            <a href="#join" class="btn btn-blue" style="font-size: 1rem; padding: 0.5rem 1.5rem; box-shadow: 3px 3px 0px var(--m-dark); background-color: var(--m-red); border-color: var(--m-red);">Join</a>
             <div class="lang-switcher">
-                <button class="lang-btn" data-lang="en">EN</button>
+                <a class="lang-btn active" href="/">EN</a>
                 <span class="lang-divider">|</span>
-                <button class="lang-btn active" data-lang="he">עב</button>
+                <a class="lang-btn" href="/ar/">AR</a>
             </div>
         </nav>
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1 class="reveal" data-i18n-html="hero-title">העתיד <span class="highlight-blue">כבר כאן.</span></h1>
-            <p class="reveal" data-i18n-html="hero-p">אנחנו בונים אלטרנטיבה פדרלית, פרקטית ואופטימית למציאות של&nbsp;ימינו.<br><strong>זה הזמן לשנות את הכללים ולבנות בית לכולם.</strong></p>
+            <h1 class="reveal">New political <span class="highlight-blue">horizons</span> for Palestine.</h1>
+            <p class="reveal">We are building a federal, practical, and optimistic alternative to the reality of our times.<br><strong>Now is the time to change the rules and build a home for everyone.</strong></p>
         </div>
     </section>
 
     <section id="about" class="manifesto">
         <div class="container">
-            <h2 class="section-title reveal" data-i18n="about-title" style="color: var(--m-yellow); text-shadow: 2px 2px 6px rgba(0,0,0,0.6);">רגע, מי אנחנו בכלל?</h2>
+            <h2 class="section-title reveal" style="color: var(--m-yellow); text-shadow: 2px 2px 6px rgba(0,0,0,0.6);">Wait, who are we anyway?</h2>
             <div class="who-diagram reveal">
                 <div class="who-bottom">
-                    <div class="who-pill" data-i18n="who-pill">מטה פעולה משותף</div>
+                    <div class="who-pill">Joint Task Force</div>
                 </div>
                 <div class="who-connectors">
                     <div class="who-connector-line who-connector-line--right"></div>
                     <div class="who-connector-line who-connector-line--left"></div>
                 </div>
                 <div class="who-boxes">
-                    <div class="who-box who-box--blue">
-                        <span data-i18n-html="who-box-blue">תנועת צעירים<br>ישראלית</span>
-                    </div>
                     <div class="who-box who-box--orange">
-                        <span data-i18n-html="who-box-orange">תנועת צעירים<br>פלסטינית</span>
+                        <span>Palestinian<br>Young Activists Movement</span>
+                    </div>
+                    <div class="who-box who-box--blue">
+                        <span>Israeli<br>Young Activists Movement</span>
                     </div>
                 </div>
             </div>
             <div class="message-cards reveal">
                 <div class="message-card message-card--bg-street">
-                    <h3 class="message-card__title message-card__title--blue" data-i18n="card1-title">מבנה התנועה</h3>
+                    <h3 class="message-card__title message-card__title--blue">Movement Structure</h3>
                     <div class="message-card__body">
-                        <h4 data-i18n="card1-h4">חזון אחד, שתי תנועות צעירים:</h4>
-                        <p data-i18n="card1-p">התנועה שלנו מורכבת מגוף פוליטי מאוחד המייצג תנועת שטח ישראלית ותנועת שטח פלסטינית של צעירים. בחרנו במודל שמאפשר לדור החדש להציג עמדה מדינית מוסכמת למקבלי ההחלטות, בזמן שבשטח כל תנועה שומרת על העצמאות שלה וממשיכה את העבודה היומיומית מול הקהילה שלה.</p>
+                        <h4>One Vision, Two Young Activists Movements:</h4>
+                        <p>Our movement consists of a unified political body representing an Israeli grassroots movement and a Palestinian grassroots movement of young people. We chose a model that allows the new generation to present a jointly agreed political position to decision-makers, while on the ground each movement maintains its independence and continues its day-to-day work with its own community.</p>
                     </div>
                 </div>
                 <div class="message-card message-card--bg-doing">
-                    <h3 class="message-card__title message-card__title--orange" data-i18n="card2-title">העשייה</h3>
+                    <h3 class="message-card__title message-card__title--orange">Our Actions</h3>
                     <div class="message-card__body">
-                        <h4 data-i18n="card2-h4">אנחנו פועלים במקביל בשתי זירות כדי לייצר שינוי אמיתי:</h4>
-                        <p data-i18n-html="card2-p">בזירה הפוליטית: עבודה מול מקבלי ההחלטות כדי להשפיע ולקדם מדיניות.<br>בזירה האזרחית: בניית תנועת שטח שמוכיחה כבר היום את מה שאנחנו רוצים לראות במדינה – קודם כל שיתוף פעולה, ואחר כך מחלוקות.</p>
+                        <h4>We operate simultaneously in two arenas to create real change:</h4>
+                        <p>In the political arena: working with decision-makers to influence and advance policy.<br>In the civic arena: building a grassroots movement that already demonstrates today what we want to see in the country — cooperation first, disagreements after.</p>
                     </div>
                 </div>
                 <div class="message-card message-card--bg-balloons">
-                    <h3 class="message-card__title" data-i18n="card3-title">המסר</h3>
+                    <h3 class="message-card__title">The Message</h3>
                     <div class="message-card__body">
-                        <h4 data-i18n="card3-h4">הכל מתנקז למטרה אחת:</h4>
-                        <p data-i18n="card3-p">להבטיח עתיד ברור ובטוח לנו ולדורות הבאים. אנחנו ההוכחה החיה לכך שזה אפשרי - אם אנחנו, אנשים בעלי דעות וזהויות שונות, הצלחנו להגיע להסכמות על העתיד המדיני שלנו, החברה כולה יכולה לעשות זאת.</p>
+                        <h4>It all converges into one goal:</h4>
+                        <p>To ensure a clear and secure future for us and for future generations. We are living proof that it is possible — if we, people with different opinions and identities, have managed to reach agreements on our shared political future, all of society can do the same.</p>
                     </div>
                 </div>
             </div>
@@ -99,13 +133,13 @@
 
     <section id="plan" class="blueprint">
         <div class="container">
-            <h2 class="section-title reveal" data-i18n="blueprint-title">מפת הדרכים לשינוי</h2>
+            <h2 class="section-title reveal">Roadmap to Change</h2>
             <div class="grid">
                 <!-- שלב 1 -->
                 <div class="card reveal">
                     <div class="num">01</div>
-                    <div class="stage-label" data-i18n="stage1-label">שלב 1</div>
-                    <h3 data-i18n="stage1-h3">ברית אינטרסים מקומית</h3>
+                    <div class="stage-label">Stage 1</div>
+                    <h3>Local Alliance of Interests</h3>
                 </div>
 
                 <!-- Arrow 1→2 -->
@@ -118,9 +152,9 @@
                 <!-- שלב 2 -->
                 <div class="card reveal">
                     <div class="num">02</div>
-                    <div class="stage-label" data-i18n="stage2-label">שלב 2</div>
-                    <h3 data-i18n="stage2-h3">מסגרת פדרלית ישראלית פלסטינית</h3>
-                    <a href="docs/Federal_Charter_Final_Draft.pdf" target="_blank" class="btn-charter" data-i18n="stage2-charter">למסמך האמנה</a>
+                    <div class="stage-label">Stage 2</div>
+                    <h3>Palestinian-Israeli Federal Framework</h3>
+                    <a href="docs/charter/Federal Charter Eng_Heb.pdf" target="_blank" rel="noopener noreferrer" class="btn-charter">To the Charter Document</a>
                 </div>
 
                 <!-- Arrow 2→3 -->
@@ -133,8 +167,8 @@
                 <!-- שלב 3 -->
                 <div class="card reveal">
                     <div class="num">03</div>
-                    <div class="stage-label" data-i18n="stage3-label">שלב 3</div>
-                    <h3 data-i18n="stage3-h3">פדרציה לבנטינית</h3>
+                    <div class="stage-label">Stage 3</div>
+                    <h3>Levantine Federation</h3>
                 </div>
             </div>
 
@@ -143,101 +177,101 @@
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-shield-halved aspect-card-icon"></i>
-                        <span data-i18n="aspect1-title">ביטחון</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect1-subtitle">מהגנה נפרדת לשותפות מרחבית</span>
+                        <span>Security</span>
+                        <span class="aspect-card-subtitle">From Separate Defense to Regional Partnership</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect1-body">אנו חותרים לעתיד שבו הביטחון מבוסס על שותפות ולא על מאבק. המהלך מתחיל בשלב הראשון ("ברית אינטרסים") עם הקמת מנגנון תיאום ביטחוני משותף לאבטחת הגבול עם ירדן ומצרים. בהמשך, יתפתח מודל של פיקוד מתואם ומשותף בנושאים מוסכמים, תוך שמירה על המסגרות הביטחוניות הקיימות של כל צד ועל יכולת הפעולה העצמאית שלהן. בשלב הפדרלי תוקם מסגרת פיקוד משותפת לניהול משימות אזוריות ולהגנת הגבולות, עם ייצוג שוויוני והסדרה ברורה של סמכויות הכוחות המשותפים לא יופעלו כנגד אוכלוסייה אזרחית. במקביל, חלק מהמסגרות הביטחוניות הקיימות בישראל ובפלסטין יוכלו לקבל גם תפקידים משלימים כ"משמר לאומי" ברמה המקומית. שיאו של התהליך יגיע בשלב השלישי, עם הרחבת מנגנוני הפיקוד המשותף לכדי שיתוף פעולה אזורי רחב יותר במסגרת פדרטיבית לבנטינית.</p>
+                        <p>We strive for a future in which security is based on partnership rather than conflict. The process begins with an initial phase (“Alliance of Interests”), involving the establishment of a joint security coordination mechanism to secure the borders with Jordan and Egypt. Subsequently, a model of coordinated and joint command will develop in agreed-upon areas, while preserving each side’s existing security frameworks and their independent operational capabilities.     At the federal stage, a joint command structure will be established to manage regional missions and border defense, with equal representation and a clear delineation of authority. The joint forces will not be deployed against civilian populations. In parallel, some of the existing security frameworks in Israel and Palestine may also assume complementary roles as a “national guard” at the local level. The process will reach its peak in the third stage, with the expansion of joint command mechanisms into broader regional cooperation within a Levantine federal framework.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-dove aspect-card-icon"></i>
-                        <span data-i18n="aspect2-title">חופש דת וחופש מדת</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect2-subtitle">כבוד מלא לאמונה ולמצפון</span>
+                        <span>Freedom of Religion and Freedom from Religion</span>
+                        <span class="aspect-card-subtitle">Full Respect for Faith and Conscience</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect2-body">עתיד החברה שלנו מבוסס על הבטחת חופש מוחלט של אמונה, מצפון ודת לכל אדם, ללא כפייה או אפליה. המסגרת הפדרלית שתוקם תגן על כל הדתות באופן שווה ותבטיח גישה חופשית למקומות הקדושים, אשר ינוהלו תחת סמכות פדרלית בלעדית. ירושלים תהיה עיר מאוחדת ותשמש כבירה משותפת. במקביל, כדי לכבד את החופש והמצפון של כל פרט, ענייני המעמד האישי ודיני המשפחה יישארו בסמכותה הבלעדית של כל מדינה ויחולו על פי אמונתו של האדם.</p>
+                        <p>The future of our society is based on guaranteeing absolute freedom of belief, conscience, and religion for every person, without coercion or discrimination. The federal framework to be established will protect all religions equally and ensure free access to holy sites, which will be managed under exclusive federal authority. Jerusalem will be a united city and serve as the shared capital. At the same time, to respect the freedom and conscience of each individual, matters of personal status and family law will remain under the exclusive jurisdiction of each state and apply according to the person's faith.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-handshake aspect-card-icon"></i>
-                        <span data-i18n="aspect3-title">שיתוף פעולה כלכלי</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect3-subtitle">בונים שגשוג משותף</span>
+                        <span>Economic Cooperation</span>
+                        <span class="aspect-card-subtitle">Building Shared Prosperity</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect3-body">הכלכלה שלנו נועדה לשרת את שני העמים מתוך חתירה לשוויון, צדק חברתי ויציבות. כבר בשלב הראשון, נייצר שוק פנימי משותף הכולל איחוד מכסים ומטבע אחיד המבוסס על השקל החדש. עם המעבר למסגרת הפדרלית, יוקם בנק מרכזי משותף שינהל את מדיניות הסחר והמטבע תוך מניעת זעזועים כלכליים וגישור על פערי הפיתוח. בשלב השלישי והאזורי, תורחב הפעילות הכלכלית עם "רשות משאבים משותפים" לכל אזור הלבנט.</p>
+                        <p>Our economy is designed to serve both peoples with a commitment to equality, social justice, and stability. Already in the first stage, we will create a shared internal market including a customs union and a unified currency based on the New Israeli Shekel. With the transition to the federal framework, a joint central bank will be established to manage trade and monetary policy while preventing economic shocks and bridging development gaps. In the third, regional stage, economic activity will be expanded with a "Joint Resources Authority" for the entire Levant region.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-scale-balanced aspect-card-icon"></i>
-                        <span data-i18n="aspect4-title">צדק משפטי</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect4-subtitle">שלטון החוק ועליונות החוקה</span>
+                        <span>Legal Justice</span>
+                        <span class="aspect-card-subtitle">Rule of Law and Constitutional Supremacy</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect4-body">מערכת המשפט שלנו תושתת על שמירה קפדנית של זכויות אדם. בשלב הראשון, נתחיל את שיתוף הפעולה באמצעות "אסיפה בין-פרלמנטרית" המייעצת לשני הפרלמנטים. בשלב השני, חוקה פדרלית משותפת תהפוך לסמכות המשפטית העליונה. יוקם בית משפט חוקתי פדרלי שפסיקותיו יחייבו את כל הרשויות, ומערכת המשפט תאוחד לעניינים אזרחיים ופדרליים. מערכת צדק זו תורחב ותשוכפל גם למוסדות הפדרציה הלבנטינית העתידית.</p>
+                        <p>Our legal system will be founded on strict protection of human rights. In the first stage, we will begin cooperation through an "Inter-Parliamentary Assembly" that advises both parliaments. In the second stage, a joint federal constitution will become the supreme legal authority. A federal constitutional court will be established whose rulings will be binding on all authorities, and the justice system will be unified for civil and federal matters. This justice system will be expanded and replicated in the institutions of the future Levantine Federation.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-graduation-cap aspect-card-icon"></i>
-                        <span data-i18n="aspect5-title">חינוך</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect5-subtitle">לומדים לחיות ביחד</span>
+                        <span>Education</span>
+                        <span class="aspect-card-subtitle">Learning to Live Together</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect5-body">אנו רואים בחינוך את המפתח לעתידנו. במסגרת הפדרלית, תובטח זכות הבחירה החינוכית ותוכניות הלימודים (של ישראל ושל פלסטין) יישמרו במלואן. רשות משותפת תוביל תוכניות של "חינוך לבניית שלום", שיאפשרו לכל צד ללמד את ההיסטוריה והזהות שלו ללא דה-לגיטימציה של האחר. כמו כן, לימודי עברית, ערבית ואנגלית יהיו חובה בכל בתי הספר. בשלב האזורי הרחב, החינוך יקודם דרך "מועצה פדרלית לתרבות וחינוך".</p>
+                        <p>We see education as the key to our future. Within the federal framework, educational choice will be guaranteed and curricula (of both Israel and Palestine) will be preserved in full. A joint authority will lead "peace-building education" programs, allowing each side to teach its history and identity without delegitimizing the other. Furthermore, Hebrew, Arabic, and English studies will be mandatory in all schools. In the broader regional stage, education will be promoted through a "Federal Council for Culture and Education."</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-building-columns aspect-card-icon"></i>
-                        <span data-i18n="aspect6-title">שיתוף מוסדי</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect6-subtitle">שותפות אמיתית ללא שליטה</span>
+                        <span>Institutional Cooperation</span>
+                        <span class="aspect-card-subtitle">True Partnership Without Domination</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect6-body">ליבת החזון שלנו מבוססת על עקרון "אי-השליטה" – מערכת שבה אף מדינה לא שולטת על השנייה פוליטית, דמוגרפית או כלכלית. בניית המוסדות תחל בהדרגה עם מועצות מקצועיות למים ולאנרגיה. בשלב הפדרלי, הממשל ינוהל בשלוש רמות (פדרלית, מדינתית ועירונית) ויוקמו מוסדות משותפים שוויוניים: ממשלה, פרלמנט ומועצה נשיאותית. המוסדות האלו יורחבו בשלב השלישי לכל מדינות הפדרציה הלבנטינית.</p>
+                        <p>The core of our vision is based on the principle of "non-domination" — a system where no state controls the other politically, demographically, or economically. Institution-building will begin gradually with professional councils for water and energy. In the federal stage, governance will be managed at three levels (federal, state, and municipal), and equal shared institutions will be established: a government, parliament, and presidential council. These institutions will be expanded in the third stage to all states of the Levantine Federation.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-earth-asia aspect-card-icon"></i>
-                        <span data-i18n="aspect7-title">שיתוף פעולה אזורי</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect7-subtitle">ישראל בלב מזרח תיכון משגשג</span>
+                        <span>Regional Cooperation</span>
+                        <span class="aspect-card-subtitle">Israel at the Heart of a Thriving Middle East</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect7-body">החזון שלנו אינו מסתגר בגבולות ישראל-פלסטין אלא שואף להשתלבות אזורית מלאה. כבר בשלב הראשון, נקדם אינטגרציה כלכלית ודיפלומטית, ונקדם את הצטרפותנו לאזור הכלכלי של הליגה הערבית או מדינות המפרץ. המסגרת הפדרלית פתוחה להצטרפות חברות חדשות, והיעד הסופי הוא הקמתה של פדרציה לבנטינית עתידית שתאחד את ישראל, פלסטין, ירדן, לבנון, סוריה ועיראק למרחב של שלום ויציבות.</p>
+                        <p>Our vision is not confined to the borders of Israel-Palestine but aspires to full regional integration. Already in the first stage, we will promote economic and diplomatic integration, and advance our accession to the economic zone of the Arab League or Gulf states. The federal framework is open to new member states, and the ultimate goal is the establishment of a future Levantine Federation uniting Israel, Palestine, Jordan, Lebanon, Syria, and Iraq into a space of peace and stability.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-people-group aspect-card-icon"></i>
-                        <span data-i18n="aspect8-title">רב תרבותיות</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect8-subtitle">חוגגים את המגוון</span>
+                        <span>Multiculturalism</span>
+                        <span class="aspect-card-subtitle">Celebrating Diversity</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect8-body">הזהויות התנועה שלנו דוחה לאומנות מדירה ורואה בגיוון התרבותי של האזור מקור עוצמה. במסגרת הפדרלית, השפות העברית והערבית יוכרו כשפות רשמיות, ולאנגלית יינתן מעמד מיוחד. לפדרציה יהיו דגל והמנון משלה שישלימו את הסמלים הלאומיים של ישראל ושל פלסטין ולא יחליפו אותם. החגיגה התרבותית תתרחב בשלב השלישי: השפה הכורדית תוכר כרשמית, ושפות כמו ארמית, טורקית, צ'רקסית, ארמנית ופרסית יזכו למעמד מיוחד.</p>
+                        <p>Our movement rejects exclusionary nationalism and sees the region's cultural diversity as a source of strength. Within the federal framework, Hebrew and Arabic will be recognized as official languages, and English will be granted special status. The federation will have its own flag and anthem that complement the national symbols of Israel and Palestine without replacing them. The cultural celebration will expand in the third stage: Kurdish will be recognized as an official language, and languages such as Aramaic, Turkish, Circassian, Armenian, and Persian will receive special status.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-person-walking aspect-card-icon"></i>
-                        <span data-i18n="aspect9-title">חופש תנועה</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect9-subtitle">מרחב פתוח לכולם</span>
+                        <span>Freedom of Movement</span>
+                        <span class="aspect-card-subtitle">An Open Space for All</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect9-body">אנו מדמיינים מרחב ללא חומות שבו כל אדם חופשי לנוע. כבר בשלב הראשון, נקדם באופן הדרגתי חופש תנועה ותעסוקה, שייושם בכפוף לצרכי הביטחון והמשק, תוך פיתוח תשתיות תחבורה מתקדמות. בשלב השני, הזכות לנוע, לטייל, ולעבוד בכל רחבי הפדרציה תובטח בחוקה לכולם, בשוויון וללא אפליה, תוך הפעלת אמצעי בקרה משותפים על גבולות חיצוניים.</p>
+                        <p>We envision a space without walls where every person is free to move. Already in the first stage, we will gradually promote freedom of movement and employment, implemented according to security and economic needs, while developing advanced transportation infrastructure. In the second stage, the right to move, travel, and work throughout the federation will be constitutionally guaranteed for all, equally and without discrimination, while operating joint controls on external borders.</p>
                     </div>
                 </div>
                 <div class="aspect-card aspect-card--expandable reveal" role="button" tabindex="0" aria-expanded="false">
                     <div class="aspect-card-header">
                         <i class="fa-solid fa-house aspect-card-icon"></i>
-                        <span data-i18n="aspect10-title">חופש מגורים</span>
-                        <span class="aspect-card-subtitle" data-i18n="aspect10-subtitle">קהילות יציבות ומשגשגות</span>
+                        <span>Freedom of Residence</span>
+                        <span class="aspect-card-subtitle">Stable and Thriving Communities</span>
                     </div>
                     <div class="aspect-card-body">
-                        <p data-i18n="aspect10-body">לצד חופש התנועה, נקדם אפשרות למגורים משותפים ומכבדים בכל חלקי הפדרציה. כדי להבטיח מעבר הרמוני ששומר על היציבות החברתית והכלכלית, המעבר של אזרחים בין המדינות ינוהל דרך מנגנון פיקוח משותף בתקופת מעבר. מטרתנו היא לאפשר פתיחות, אך במקביל למנוע באופן מוחלט ניצול של הזכות להגירה פנימית ככלי פוליטי להשתלטות דמוגרפית על שטחים. באשר לעולים ופליטים מבחוץ, חוקי ההגירה הקיימים ביחס לתפוצה היהודית והפלסטינית יישארו בסמכותן של המדינות ויוכרו על ידי מוסדות הפדרציה.</p>
+                        <p>Alongside freedom of movement, we will promote the possibility of shared and respectful residence throughout the federation. To ensure a harmonious transition that preserves social and economic stability, the movement of citizens between states will be managed through a joint oversight mechanism during a transition period. Our goal is to enable openness while absolutely preventing the misuse of internal migration rights as a political tool for demographic takeover of territories. As for immigrants and refugees from outside, existing immigration laws regarding the Jewish and Palestinian diaspora will remain under state jurisdiction and be recognized by federation institutions.</p>
                     </div>
                 </div>
             </div>
@@ -247,64 +281,51 @@
     <!-- סקשן אירועים -->
     <section id="events" class="events-section">
         <div class="container">
-            <h2 class="section-title reveal" data-i18n="events-title">אירועים ופעילות בשטח</h2>
+            <h2 class="section-title reveal">Events and Field Activity</h2>
             <div class="events-grid">
                 <div class="event-card reveal">
                     <div class="event-img-pair">
-                        <img src="images/used/europe_conference.webp" data-i18n-alt="event1-alt1" alt="כנסים באירופה 1">
-                        <img src="images/used/europe_conference_2.webp" data-i18n-alt="event1-alt2" alt="כנסים באירופה 2">
+                        <img src="images/used/europe_conference.webp" alt="Conferences in Europe 1" width="1920" height="1280">
+                        <img src="images/used/europe_conference_2.webp" alt="Conferences in Europe 2" width="1920" height="2560">
                     </div>
                     <div class="event-info">
-                        <h4 data-i18n="event1-h4">כנסים באירופה</h4>
-                        <p data-i18n="event1-p">מפגשים בינלאומיים לקידום החזון הפדרלי עם קובעי מדיניות באיחוד האירופי ושיח על שיתוף פעולה אזורי.</p>
+                        <h4>Conferences in Europe</h4>
+                        <p>International meetings to advance the federal vision with EU policy makers and discussions on regional cooperation.</p>
                     </div>
                 </div>
                 <div class="event-card reveal">
                     <div class="event-img-placeholder" style="padding: 0; overflow: hidden;">
-                        <img src="images/used/young_leadership.webp" data-i18n-alt="event2-alt" alt="מנהיגות צעירה" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/used/young_leadership.webp" alt="Young Leadership" width="1600" height="1200" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="event-info">
-                        <h4 data-i18n="event2-h4">מנהיגות צעירה</h4>
-                        <p data-i18n="event2-p">סדנאות שטח וסמינרים המפגישים צעירים וצעירות מכל רחבי הארץ לבניית האלטרנטיבה המשותפת.</p>
+                        <h4>Young Leadership</h4>
+                        <p>Field workshops and seminars bringing together young people from across the country to build the joint alternative.</p>
                     </div>
                 </div>
                 <div class="event-card reveal">
                     <div class="event-img-placeholder" style="padding: 0; overflow: hidden;">
-                        <img src="images/used/work_teams.webp" data-i18n-alt="event3-alt" alt="צוותי עבודה" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/used/work_teams.webp" alt="Work Teams" width="1920" height="1279" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="event-info">
-                        <h4 data-i18n="event3-h4">צוותי עבודה</h4>
-                        <p data-i18n="event3-p">צוותי משימה מקצועיים הפועלים לגיבוש ניירות עמדה מדיניים, פיתוח אסטרטגיות שיווק, ניהול פיננסי, וטיפוח קשרים עם הקהילה ועם השטח.</p>
+                        <h4>Work Teams</h4>
+                        <p>Professional task forces working to develop policy position papers, marketing strategies, financial management, and nurturing community and field relationships.</p>
                     </div>
                 </div>
                 <div class="event-card reveal">
                     <div class="event-img-placeholder" style="padding: 0; overflow: hidden;">
-                        <img src="images/used/hasbara_event.webp" data-i18n-alt="event4-alt" alt="אירועי הסברה" style="width: 100%; height: 100%; object-fit: cover;">
+                        <img src="images/used/hasbara_event.webp" alt="Advocacy Events" width="1600" height="1200" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="event-info">
-                        <h4 data-i18n="event4-h4">אירועי הסברה</h4>
-                        <p data-i18n="event4-p">מפגשים פתוחים ושיחות עומק בברים, באוניברסיטאות ובמרכזים קהילתיים ברחבי הארץ והאזור.</p>
+                        <h4>Advocacy Events</h4>
+                        <p>Open meetings and in-depth conversations in bars, universities, and community centers throughout the country and region.</p>
                     </div>
                 </div>
             </div>
 
             <!-- מפת המשאבים המעודכנת -->
             <div id="resources" class="resources-banner reveal">
-                <h3 data-i18n="resources-h3">רוצים לצלול לפרטים?</h3>
-                <div class="resource-grid">
-                    <a href="docs/Federal_Charter_Final_Draft.pdf" target="_blank" class="resource-card" style="background: #EFF6FF; border-top: 6px solid var(--m-blue); align-items: flex-start; text-align: right;">
-                        <p style="font-size: 1rem; line-height: 1.7;" data-i18n="resource1-p">אמנת התנועה המשותפת, שנוסחה בשיתוף עם התנועה הפלסטינית המקבילה, התקבלה ב-22 בפברואר 2026 במהלך מפגש כלל הפעילים שנערך במזרח ירושלים, בבית שגריר האיחוד האירופי.</p>
-                        <div class="resource-btn" style="margin-top: 1.25rem;" data-i18n="resource1-btn">לקריאת מסמך האמנה המלא</div>
-                    </a>
-                    <a href="https://www.treffpunkteuropa.de/as-israelis-and-palestinians-we-shall-go-together-to-brussels?lang=fr" target="_blank" class="resource-card" style="background: #FFF7ED; border-top: 6px solid var(--m-orange); align-items: flex-start; text-align: right;">
-                        <p style="font-size: 1rem; line-height: 1.7;" data-i18n="resource2-p">יאיר גורני, ראש צוות המדיניות בתנועה, פרסם מאמר במגזין Europe in the World תחת הכותרת: "As Israelis and Palestinians, We Shall Go Together to Brussels" — קריאה משותפת לישראלים ולפלסטינים לפעול יחד בזירה האירופית.</p>
-                        <div class="resource-btn" style="margin-top: 1.25rem;" data-i18n="resource2-btn">למעבר לכתבה</div>
-                    </a>
-                    <a href="docs/Supranational Federalism - No 3.pdf" target="_blank" class="resource-card" style="background: #F0FDF4; border-top: 6px solid #16A34A; align-items: flex-start; text-align: right;">
-                        <p style="font-size: 1rem; line-height: 1.7;" data-i18n="resource3-p">מאמר שפורסם בכתב עת העוסק בפדרליזם, המתמקד בפעילות התנועה, תחת הכותרת: "Anatomy of a Conflict: Architecture of a Solution: An Israeli-Palestinian Partnership Towards Levantine Federalism."</p>
-                        <div class="resource-btn" style="margin-top: 1.25rem;" data-i18n="resource3-btn">למאמר המלא</div>
-                    </a>
-                </div>
+                <h3>Want to dive into details?</h3>
+                <div id="resource-grid" class="resource-grid"></div>
             </div>
         </div>
     </section>
@@ -313,11 +334,11 @@
         <div class="container">
             <div class="cta-content">
                 <div class="cta-text">
-                    <h2 class="reveal" data-i18n="cta-h2">בואו לעשות היסטוריה.</h2>
-                    <p class="reveal" data-i18n="cta-p" style="font-size: 1.5rem;">הכוח לשנות נמצא בידיים שלנו. השאירו פרטים ונחזור אליכם עם דרכים להשפיע בשטח ובדיגיטל.</p>
+                    <h2 class="reveal">Let's make history.</h2>
+                    <p class="reveal" style="font-size: 1.5rem;">The power to change is in our hands. Leave your details and we'll get back to you with ways to make an impact in the field and online.</p>
                 </div>
                 <div class="form-container reveal">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScejXJlnL07HFC4WztDd0x9hKuD1P1HRV-qMma3E-qm13I6MA/viewform?embedded=true" height="600" loading="lazy">טוען…</iframe>
+                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScbgmSkhmjq-tq-w_q2Df_ZmQ7wAer6TnNXpjkEutMTNRxB6Q/viewform?embedded=true" height="600" loading="lazy">Loading…</iframe>
                 </div>
             </div>
         </div>
@@ -325,18 +346,13 @@
 
     <footer>
         <div class="container">
-            <div class="footer-logo-container">
-                <div class="footer-logo" data-i18n="footer-logo-text">עתיד פדרלי - מכנה משותף</div>
-                <img src="images/used/logo.webp" data-i18n-alt="footer-logo-alt" alt="עתיד פדרלי לוגו" class="footer-logo-img" onerror="this.style.display='none'">
-            </div>
-
             <div class="socials">
-                <a href="https://www.instagram.com/atid_fed/" target="_blank" class="social-link" title="Instagram">
+                <a href="https://www.instagram.com/dfh.palestine/" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                 </a>
             </div>
 
-            <p class="footer-text" data-i18n="footer-text">התנועה פתוחה לכל מי שמזדהה עם עקרונות החזון הפדרלי.</p>
+            <p class="footer-text">The movement is open to anyone who identifies with the principles of the federal vision.</p>
         </div>
     </footer>
 

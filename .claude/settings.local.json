@@ -16,7 +16,23 @@
       "Bash(mkdir -p used unused)",
       "Bash(mv logo.webp europe_parlament.webp doing_background_2.webp background_decorative_4.webp background_decorative_5.webp 0.webp europe_conference.webp europe_conference_2.webp young_leadership.webp work_teams.webp hasbara_event.webp used/)",
       "Bash(mv background_decorative_1.webp background_decorative_2.webp background_decorative_3.webp doing_background.webp europe_parlament_2.webp unused/)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(curl -sI -L \"https://forms.gle/pyS6PeTxTbXGTLzN9?embedded=true\")",
+      "Bash(python3 -c ' *)",
+      "Bash(git -c safe.directory='*' status --porcelain -- \"images/used\")",
+      "Bash(git mv *)",
+      "Bash(git -c safe.directory='*' mv \"images/used/dfhp banner.jpeg\" \"images/used/dfhp_banner.jpeg\")",
+      "Bash(git -c safe.directory='*' mv \"images/used/dfhp banner transparent.png\" \"images/used/dfhp_banner_transparent.png\")",
+      "Bash(chromium-cli --help)",
+      "Bash(curl -s -o /dev/null -w \"root:%{http_code}\\\\n\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"ar:%{http_code}\\\\n\" http://localhost:3000/ar/)",
+      "Bash(npx --yes playwright install chromium)",
+      "Bash(npm init *)",
+      "Bash(npm install *)",
+      "Bash(taskkill //F //IM node.exe //FI \"WINDOWTITLE eq npx*\")",
+      "Bash(pkill -f \"npx serve\")",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)"
     ]
   }
 }
