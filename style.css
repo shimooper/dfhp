@@ -17,7 +17,7 @@
 }
 
 body {
-    font-family: 'Heebo', sans-serif;
+    font-family: 'Rubik', sans-serif;
     background-color: var(--m-bg);
     color: var(--m-dark);
     overflow-x: hidden;
@@ -77,6 +77,23 @@ nav {
     display: flex;
     align-items: center;
     gap: 12px;
+}
+
+.logo-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: stretch;
+    line-height: 1;
+    font-size: 0.8rem;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+.logo-subtitle__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.25em;
 }
 
 .logo-img {
@@ -140,7 +157,7 @@ nav {
 
 /* Hero Section */
 .hero {
-    background-color: var(--m-yellow);
+    background-color: #D48C5D;
     padding: 180px 0 120px 0;
     text-align: center;
     position: relative;
@@ -188,8 +205,8 @@ nav {
 
 /* Manifesto */
 .manifesto {
-    background-color: var(--m-red);
-    color: white;
+    background-color: var(--m-yellow);
+    color: var(--m-dark);
     padding: 100px 0;
     text-align: center;
     border-bottom: 8px solid var(--m-dark);
@@ -198,7 +215,7 @@ nav {
 .manifesto h2 {
     font-size: clamp(2.5rem, 6vw, 4rem);
     margin-bottom: 2.5rem;
-    color: var(--m-yellow);
+    color: var(--m-dark);
 }
 
 .manifesto p {
@@ -236,7 +253,7 @@ nav {
 }
 
 .who-triangle-svg line {
-    stroke: white;
+    stroke: var(--m-dark);
     stroke-width: 3px;
     vector-effect: non-scaling-stroke;
 }
@@ -298,7 +315,7 @@ nav {
 
 .who-box--orange { background: var(--m-orange); border-color: white; }
 .who-box--blue   { background: var(--m-blue); border-color: white; }
-.who-box--yellow { background: var(--m-yellow); color: var(--m-dark); border-color: var(--m-dark); }
+.who-box--yellow { background: var(--m-red); border-color: white; }
 
 
 /* Message Cards */
@@ -312,7 +329,7 @@ nav {
 }
 
 .message-card {
-    background: #16400F;
+    background: var(--m-dark);
     border-radius: 16px;
     padding: 2.5rem 2.5rem;
     text-align: right;
@@ -358,7 +375,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(22, 64, 15, 0.82);
+    background: rgba(58, 42, 34, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -389,7 +406,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(22, 64, 15, 0.82);
+    background: rgba(58, 42, 34, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -422,7 +439,7 @@ nav {
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(22, 64, 15, 0.82);
+    background: rgba(58, 42, 34, 0.82);
     border-radius: inherit;
     z-index: 0;
 }
@@ -434,6 +451,10 @@ nav {
 
 .message-card__body {
     margin-top: 1.8rem;
+}
+
+.message-card__body h4 {
+    color: white;
 }
 
 .message-card__body p {
@@ -738,7 +759,7 @@ nav {
     border: 4px solid var(--m-dark);
     border-radius: 30px;
     padding: 4rem 2rem;
-    margin-top: 80px;
+    margin-top: 130px;
     box-shadow: 10px 10px 0px var(--m-dark);
     text-align: center;
     scroll-margin-top: 100px;
@@ -998,6 +1019,7 @@ html[dir="ltr"] .resource-card {
     nav { min-height: 60px; height: auto; padding: 6px 0; gap: 0.5rem; }
     .logo { font-size: 0.75rem; gap: 6px; flex-shrink: 1; min-width: 0; }
     .logo-img { width: 32px; height: 32px; flex-shrink: 0; }
+    .logo-subtitle { display: none; }
     nav > .btn { font-size: 0.75rem !important; padding: 0.35rem 0.75rem !important; box-shadow: 2px 2px 0px var(--m-dark) !important; flex-shrink: 0; }
     .lang-switcher { flex-shrink: 0; margin-inline-start: 0.5rem; }
     html[dir="ltr"] .logo { margin-inline-start: 0.5rem; }
