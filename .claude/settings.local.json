@@ -40,7 +40,8 @@
       "Bash(npx --yes serve -l 3000)",
       "Bash(curl -s http://localhost:3000/)",
       "Bash(curl -s http://localhost:3000/ar/)",
-      "Bash(curl -s http://localhost:3000/script.js)"
+      "Bash(curl -s http://localhost:3000/script.js)",
+      "Bash(curl -s http://localhost:3000/style.css)"
     ]
   }
 }

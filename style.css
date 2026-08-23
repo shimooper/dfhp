@@ -364,7 +364,7 @@ nav {
 
 
 .message-card--bg-doing {
-    background-image: url('images/used/doing_background_2.webp');
+    background-image: url('images/used/olives.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -395,7 +395,7 @@ nav {
 }
 
 .message-card--bg-street {
-    background-image: url('images/used/structure_background.webp');
+    background-image: url('images/used/Palestinian_keffiyeh.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -428,7 +428,7 @@ nav {
 }
 
 .message-card--bg-balloons {
-    background-image: url('images/used/message_background.webp');
+    background-image: url('images/used/dome-of-the-rock.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -755,13 +755,15 @@ nav {
 
 /* Instagram embed */
 .instagram-feed {
-    margin-top: 80px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--m-dark);
     text-align: center;
 }
 
-.instagram-feed h3 {
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
+.instagram-feed h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .instagram-embed-wrap {
