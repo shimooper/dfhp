@@ -92,6 +92,22 @@ document.querySelectorAll('.aspect-card--expandable').forEach(card => {
     });
 });
 
+// Lazy-load the Instagram embed script only once an embed scrolls near view,
+// so it doesn't add weight to initial page load.
+const igEmbeds = document.querySelectorAll('.instagram-media');
+if (igEmbeds.length) {
+    const igObserver = new IntersectionObserver((entries, obs) => {
+        if (entries.some(entry => entry.isIntersecting)) {
+            const script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.instagram.com/embed.js';
+            document.body.appendChild(script);
+            obs.disconnect();
+        }
+    }, { rootMargin: '200px' });
+    igEmbeds.forEach(el => igObserver.observe(el));
+}
+
 // Sticky Header effect
 window.addEventListener('scroll', () => {
     const header = document.getElementById('header');

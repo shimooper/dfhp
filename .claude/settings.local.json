@@ -36,7 +36,11 @@
       "Bash(git config *)",
       "Bash(git -C \"C:/repos/dfhp\" log --oneline -5)",
       "Bash(git -C \"C:/repos/dfhp\" remote -v)",
-      "Bash(curl -s http://localhost:4173/ar/)"
+      "Bash(curl -s http://localhost:4173/ar/)",
+      "Bash(npx --yes serve -l 3000)",
+      "Bash(curl -s http://localhost:3000/)",
+      "Bash(curl -s http://localhost:3000/ar/)",
+      "Bash(curl -s http://localhost:3000/script.js)"
     ]
   }
 }
