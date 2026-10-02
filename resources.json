@@ -7,13 +7,61 @@
       "logo": "docs/docs_logos/shaking_hands.webp",
       "cardBackground": "#EEF6EA",
       "cardBorderColor": "var(--m-blue)",
-      "he": {
-        "title": "האמנה הפדרלית",
-        "description": "אמנת התנועה המשותפת, שנוסחה בשיתוף עם התנועה הפלסטינית המקבילה, התקבלה ב-22 בפברואר 2026 במהלך מפגש כלל הפעילים שנערך במזרח ירושלים, בבית שגריר האיחוד האירופי."
+      "ar": {
+        "title": "الميثاق الفدرالي",
+        "description": "تم اعتماد ميثاق الحركة المشتركة في 22 شباط/فبراير 2026، خلال اجتماع عام لجميع الناشطين عُقد في القدس الشرقية، في مقر إقامة سفير الاتحاد الأوروبي."
       },
       "en": {
         "title": "The Federal Charter",
         "description": "The joint movement charter was adopted on February 22, 2026, during a plenary meeting of all activists held in East Jerusalem, at the residence of the EU Ambassador."
+      }
+    },
+    {
+      "id": 2,
+      "link": "https://federalists.eu/federalist-library/%D8%A7%D8%B2%D9%85%D8%A9-%D8%A7%D9%84%D8%AD%D8%B6%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D8%AF-%D9%8A%D8%AB%D8%A9/",
+      "date": "1944-08-22",
+      "logo": "docs/docs_logos/uef-80-small.webp",
+      "cardBackground": "#FBF3E0",
+      "cardBorderColor": "var(--m-yellow)",
+      "ar": {
+        "title": "بيان فنتوتيني",
+        "description": "هذه الترجمة العربية لبيان فنتوتيني من إعداد CIFE إيطاليا."
+      },
+      "en": {
+        "title": "Ventotene Manifesto",
+        "description": "This Arabic translation of the Ventotene Manifesto is by CIFE Italia."
+      }
+    },
+    {
+      "id": 3,
+      "link": "https://www.falestinona.com/flst/Art/74863#gsc.tab=0",
+      "date": "2017-01-03",
+      "logo": "docs/docs_logos/header-logo.webp",
+      "cardBackground": "#FAEBE2",
+      "cardBorderColor": "var(--m-orange)",
+      "ar": {
+        "title": "ما هي الدولة الفدرالية؟",
+        "description": "بقلم حنا عيسى"
+      },
+      "en": {
+        "title": "What Is a Federal State?",
+        "description": "An article by Hanna Issa."
+      }
+    },
+    {
+      "id": 4,
+      "link": "https://www.wattan.net/ar/news/301711.html",
+      "date": "2020-02-11",
+      "logo": "docs/docs_logos/wattan30.webp",
+      "cardBackground": "#F6E4E0",
+      "cardBorderColor": "var(--m-red)",
+      "ar": {
+        "title": "التفكير خارج الصندوق: الفيدرالية و الكونفدرالية و حل الصراع الفلسطيني - الإسرائيلي",
+        "description": "كتب: عز الدين المصري"
+      },
+      "en": {
+        "title": "Thinking outside the box: Federalism, confederalism, and resolving the Palestinian-Israeli conflict",
+        "description": "Written by: Ezz El-Din El-Masry"
       }
     }
   ]
