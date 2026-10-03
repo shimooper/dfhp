@@ -80,6 +80,7 @@ nav {
 }
 
 .logo-subtitle {
+    direction: ltr; /* Latin text: keep word/letter order in RTL (Arabic) pages */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
