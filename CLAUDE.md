@@ -6,14 +6,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 This is the website for **DFHP** (Democracy and Federalism Hub), a Palestinian political movement/civic engagement platform, parallel to a sister Israeli movement. It is deployed via GitHub Pages at `dfh.org.ps`.
 
-English is the canonical/default-language version of the site. The Arabic page (`/ar/`) is a **placeholder**: it was forked from an earlier Hebrew-language version of this template and its body copy is still literally in Hebrew (including the old "עתיד פדרלי" / "Federal Future" branding in the visible text) pending a real Arabic translation pass — don't assume the `/ar/` page's visible content reflects the current DFHP branding or is actually Arabic yet. Only its structural/meta fields (`lang`, canonical URL, hreflang, language-switcher label, and the Latin-script portions of `<title>`/OG/JSON-LD) have been updated to DFHP and to Arabic.
+English is the canonical/default-language version of the site. The Arabic page (`/ar/`) is a full Arabic translation of the English page (body copy, `<title>`/meta/OG/JSON-LD, alt texts). The site supports only English and Arabic — there is no Hebrew anywhere. The Arabic copy was machine-drafted and has not yet had a native-speaker proofread.
 
 ## Architecture
 
 The site is plain static files, no build system or framework:
 
 - `index.html` — English page (`lang="en" dir="ltr"`), served at `/`. This is the canonical/default-language version.
-- `ar/index.html` — Arabic-flagged page (`lang="ar" dir="rtl"`), served at `/ar/`. A fully separate, hand-maintained HTML file — see "Bilingual System" below. Its visible body text is still the old Hebrew placeholder copy (see Project Overview).
+- `ar/index.html` — Arabic-flagged page (`lang="ar" dir="rtl"`), served at `/ar/`. A fully separate, hand-maintained HTML file — see "Bilingual System" below.
 - `style.css` — all styles, shared by both pages (linked via `<link rel="stylesheet">`)
 - `script.js` — all JavaScript, shared by both pages (linked via `<script src>` at end of body)
 - `resources.json` — data for the resources banner cards, fetched client-side by `script.js`
@@ -64,10 +64,10 @@ There is **no shared translation data and no build step** — the two files are 
 
 ### How it works
 - `index.html` (root) has English text baked directly into the markup, `<html lang="en" dir="ltr">`.
-- `ar/index.html` is flagged `<html lang="ar" dir="rtl">` but its body copy is still the untranslated Hebrew placeholder text inherited from the earlier template (see Project Overview) — don't treat it as real Arabic content yet.
+- `ar/index.html` is `<html lang="ar" dir="rtl">` with Arabic body copy. The header logo subtitle ("Democracy & Federalism Hub Palestine") is intentionally left in Latin script, since it is built from per-letter spans that would break Arabic letter joining.
 - The language switcher in the header (`.lang-switcher`) is a pair of plain `<a>` links: `href="/"` and `href="/ar/"` — clicking causes a real page navigation, not an in-place swap.
 - Because `ar/index.html` lives one directory deep, its asset references (`style.css`, `script.js`, `images/...`, `docs/...`, favicon, lang-switcher links) use **`../`-prefixed relative paths**, while `index.html` at the root uses plain relative paths (`style.css`, `ar/`, etc.). Root-relative paths (a leading `/`) are deliberately avoided site-wide: they only resolve correctly when the site is served from a domain root, and break when served from a GitHub Pages project path like `/dfhp/` (no custom domain configured — see `CNAME` history). `resources.json`'s `link`/`logo` fields are stored as paths relative to the site root (no leading slash) and are resolved at render time in `script.js` against `SITE_ROOT` — a base URL computed from `document.currentScript.src`, so it's correct regardless of which page (or hosting path) loaded the script.
-- `script.js` determines which language it's running under via `document.documentElement.lang` (`CURRENT_LANG`). Since `resources.json` still only has `he`/`en` keys (not yet translated to Arabic), `CURRENT_LANG` maps `lang="ar"` to the `'he'` data bucket — see the top of `script.js`. Update this mapping if/when `resources.json` gains real `ar` keys.
+- `script.js` determines which language it's running under via `document.documentElement.lang` (`CURRENT_LANG`). `CURRENT_LANG` is `'ar'` or `'en'` and selects the matching `ar`/`en` key in each `resources.json` entry (falling back to `en`). `script.js` also holds the per-language month names and the "Read more..." label, so any new language needs entries there.
 
 ### LTR layout overrides (in `style.css`)
 On `index.html` (`html[dir="ltr"]`), the following physical-direction overrides apply:
@@ -78,7 +78,7 @@ On `index.html` (`html[dir="ltr"]`), the following physical-direction overrides 
 - `.resource-card` — `text-align: left`
 - `.lang-switcher` — `order: -1` to keep it on the physical left in LTR flex layout
 
-These selectors key off the `dir` attribute, not `lang`, so they apply correctly to `index.html` (ltr) regardless of which language occupies root; `ar/index.html` stays `dir="rtl"` like the Hebrew page it replaced, so no CSS changes were needed for the swap.
+These selectors key off the `dir` attribute, not `lang`, so they apply correctly to `index.html` (ltr) regardless of which language occupies root; `ar/index.html` stays `dir="rtl"` and uses the base (RTL) styles with no overrides.
 
 ### Adding or editing content
 Since there's no shared translation source, every content change must be made **twice** — once in `index.html`, once in `ar/index.html` — keeping structure/classes/IDs identical between them so `style.css` and `script.js` behave the same on both.

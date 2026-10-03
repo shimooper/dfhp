@@ -620,6 +620,7 @@ nav {
 }
 
 .aspect-card--expandable .aspect-card-header {
+    min-height: var(--aspect-header-h, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -629,7 +630,8 @@ nav {
     content: '▼';
     display: block;
     font-size: 0.65rem;
-    margin-top: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
     opacity: 0.5;
     transition: transform 0.3s;
 }

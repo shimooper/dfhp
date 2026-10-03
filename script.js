@@ -6,7 +6,7 @@ const SITE_FEATURES = {
     roadmapDiagram: false,
 };
 
-const CURRENT_LANG = document.documentElement.lang === 'ar' ? 'he' : 'en';
+const CURRENT_LANG = document.documentElement.lang === 'ar' ? 'ar' : 'en';
 // Resolved from this script's own <script src> so links work whether the site is hosted
 // at a domain root or under a GitHub Pages project path (e.g. /dfhp/).
 const SITE_ROOT = new URL('.', document.currentScript.src).href;
@@ -27,9 +27,9 @@ function formatResourceDate(dateStr, lang) {
     const day = parts[2] ? parseInt(parts[2], 10) : null;
     if (!month) return year;
     const monthNamesEn = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-    const monthNamesHe = ['ינואר','פברואר','מרץ','אפריל','מאי','יוני','יולי','אוגוסט','ספטמבר','אוקטובר','נובמבר','דצמבר'];
-    if (lang === 'he') {
-        return day ? `${day} ב${monthNamesHe[month - 1]} ${year}` : `${monthNamesHe[month - 1]} ${year}`;
+    const monthNamesAr = ['كانون الثاني','شباط','آذار','نيسان','أيار','حزيران','تموز','آب','أيلول','تشرين الأول','تشرين الثاني','كانون الأول'];
+    if (lang === 'ar') {
+        return day ? `${day} ${monthNamesAr[month - 1]} ${year}` : `${monthNamesAr[month - 1]} ${year}`;
     }
     return day ? `${monthNamesEn[month - 1]} ${day}, ${year}` : `${monthNamesEn[month - 1]} ${year}`;
 }
@@ -39,7 +39,7 @@ function renderResources(lang) {
     const grid = document.getElementById('resource-grid');
     if (!grid) return;
     grid.innerHTML = [...resourcesData.resources].reverse().map(r => {
-        const t = r[lang] || r['he'];
+        const t = r[lang] || r['en'];
         const logoHtml = r.logo
             ? `<img src="${new URL(r.logo, SITE_ROOT)}" alt="" class="resource-logo" style="max-height: 28px; margin-bottom: 0.75rem;">`
             : '';
@@ -52,7 +52,7 @@ function renderResources(lang) {
             <div class="resource-title">${t.title}</div>
             ${dateHtml}
             <p style="font-size: 1rem; line-height: 1.7;">${t.description}</p>
-            <div class="resource-btn" style="margin-top: 1.25rem;">${lang === 'he' ? 'להמשך קריאה...' : 'Read more...'}</div>
+            <div class="resource-btn" style="margin-top: 1.25rem;">${lang === 'ar' ? 'اقرأ المزيد...' : 'Read more...'}</div>
         </a>`;
     }).join('');
 }
@@ -91,6 +91,20 @@ document.querySelectorAll('.aspect-card--expandable').forEach(card => {
         if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
     });
 });
+
+// Keep all collapsed aspect cards the same height: size every header to the tallest one.
+const aspectGrid = document.querySelector('.aspects-grid');
+function equalizeAspectCards() {
+    if (!aspectGrid) return;
+    aspectGrid.style.removeProperty('--aspect-header-h');
+    const headers = aspectGrid.querySelectorAll('.aspect-card-header');
+    const tallest = Math.max(...[...headers].map(h => h.offsetHeight));
+    if (tallest > 0) aspectGrid.style.setProperty('--aspect-header-h', tallest + 'px');
+}
+equalizeAspectCards();
+window.addEventListener('resize', equalizeAspectCards);
+window.addEventListener('load', equalizeAspectCards);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(equalizeAspectCards);
 
 // Lazy-load the Instagram embed script only once an embed scrolls near view,
 // so it doesn't add weight to initial page load.
